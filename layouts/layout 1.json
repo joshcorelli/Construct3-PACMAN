@@ -3630,7 +3630,7 @@
 						}
 					},
 					"world": {
-						"x": 408,
+						"x": 312,
 						"y": 168,
 						"width": 48,
 						"height": 48,
@@ -4474,7 +4474,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 312,
+						"x": 192,
 						"y": 168,
 						"width": 8,
 						"height": 8,
