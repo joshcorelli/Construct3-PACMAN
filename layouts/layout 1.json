@@ -3796,48 +3796,6 @@
 					}
 				},
 				{
-					"type": "txtGUI",
-					"properties": {
-						"text": "Text",
-						"enable-bbcode": false,
-						"font": "Arial",
-						"size": 48,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "center"
-					},
-					"uid": 264,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -144,
-						"y": 264,
-						"width": 456,
-						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "playerLives",
 					"properties": {
 						"initially-visible": true,
@@ -7588,7 +7546,7 @@
 					"type": "Ghost",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Blinky_180",
+						"initial-animation": "Blinky_0",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -7597,7 +7555,7 @@
 					"instanceVariables": {
 						"direction": 0,
 						"moveDuration": 0.33,
-						"name": "",
+						"name": "Blinky",
 						"vert": false,
 						"hor": true,
 						"escape": false,
@@ -7628,6 +7586,162 @@
 						"y": 456,
 						"width": 24,
 						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "txtGUI",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": false,
+						"font": "Arial",
+						"size": 48,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "center"
+					},
+					"uid": 264,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 408,
+						"y": 360,
+						"width": 456,
+						"height": 120,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Ghost",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Blinky_0",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 140,
+					"instanceVariables": {
+						"direction": 0,
+						"moveDuration": 0.33,
+						"name": "Pinky",
+						"vert": false,
+						"hor": true,
+						"escape": false,
+						"eaten": false,
+						"escapeBlink": false
+					},
+					"behaviors": {
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 456,
+						"y": 456,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "wall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 143,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 408,
+						"y": 648,
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "wall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 144,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 408,
+						"y": 696,
+						"width": 48,
+						"height": 48,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

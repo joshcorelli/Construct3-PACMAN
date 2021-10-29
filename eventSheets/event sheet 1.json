@@ -1342,7 +1342,7 @@
 				{
 					"id": "set-boolean-instvar",
 					"objectClass": "Ghost",
-					"sid": 850028696946545,
+					"sid": 669600926199281,
 					"parameters": {
 						"instance-variable": "escapeBlink",
 						"value": "true"
@@ -1474,10 +1474,10 @@
 				{
 					"id": "set-boolean-instvar",
 					"objectClass": "Ghost",
-					"sid": 556173089808865,
+					"sid": 723600238303907,
 					"parameters": {
 						"instance-variable": "escape",
-						"value": "false"
+						"value": "true"
 					}
 				},
 				{

@@ -83,6 +83,49 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
+						"imageSpriteId": 8437099,
+						"collisionPoly": {
+							"points": [
+								0.14583333333333334,
+								0.14583333333333334,
+								0.5,
+								0,
+								0.8333333333333334,
+								0.14583333333333334,
+								0.9791666666666666,
+								0.5,
+								0.9375,
+								0.9375,
+								0.5,
+								0.9791666666666666,
+								0.041666666666666664,
+								0.9375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 576443682707902,
+				"name": "Blinky_0",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
 						"imageSpriteId": 21,
 						"collisionPoly": {
 							"points": [
