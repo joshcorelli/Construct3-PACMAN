@@ -695,7 +695,17 @@
 									}
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Ghost",
+									"sid": 558416947239140,
+									"parameters": {
+										"instance-variable": "moveDuration",
+										"value": "0.5"
+									}
+								}
+							],
 							"sid": 387716796385858,
 							"children": [
 								{
@@ -909,6 +919,15 @@
 									"parameters": {
 										"animation": "Self.name & \"_\" & Self.direction",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Ghost",
+									"sid": 470221197132405,
+									"parameters": {
+										"instance-variable": "moveDuration",
+										"value": "0.33"
 									}
 								}
 							],
