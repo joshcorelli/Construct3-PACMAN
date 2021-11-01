@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "timer",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "120",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -2104,10 +2104,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 911985585839284,
+					"sid": 873136359621032,
 					"parameters": {
 						"variable": "timer",
-						"value": "10"
+						"value": "120"
 					}
 				}
 			],
@@ -2122,7 +2122,29 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 677095771039160
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "txtGUI",
+					"sid": 998948858926978,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtGUI",
+					"sid": 434018741610020,
+					"parameters": {
+						"text": "\"Game Over\""
+					}
+				}
+			],
 			"sid": 707384373582284
 		}
 	],
