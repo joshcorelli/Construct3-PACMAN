@@ -2,6 +2,16 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "timer",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 869800721012965
+		},
+		{
 			"eventType": "comment",
 			"text": "Control the Player with the keyboard arrows to move it and try to eat all the dots and big dots on the board.\nDon't collide with the ghosts unless they are vulnerable.\n\nThe Game object contains all the \"global\" variables.\n\nThe Player and Ghosts use the Bullet behavior to move.\nThey move for moveDuration and the Bullet speed is set back to 0 when done."
 		},
@@ -2021,6 +2031,99 @@
 				}
 			],
 			"sid": 597825143285581
+		},
+		{
+			"eventType": "comment",
+			"text": "Timer"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 276936698238596
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "text_time",
+					"sid": 286897469346330,
+					"parameters": {
+						"text": "timer"
+					}
+				}
+			],
+			"sid": 904903916898828
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 945975010669206,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 946639888034643,
+					"parameters": {
+						"variable": "timer",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 338961635813567
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 160678380998133,
+					"parameters": {
+						"variable": "timer",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "playerDeath",
+					"sid": 549090065624683
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 911985585839284,
+					"parameters": {
+						"variable": "timer",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 565360041910491
+		},
+		{
+			"functionName": "playerDeath",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 707384373582284
 		}
 	],
 	"sid": 500463198133144

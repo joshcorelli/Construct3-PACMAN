@@ -96,7 +96,8 @@
 			"playerSpawn",
 			"txtScore",
 			"txtGUI",
-			"playerLives"
+			"playerLives",
+			"text_time"
 		],
 		"subfolders": []
 	},

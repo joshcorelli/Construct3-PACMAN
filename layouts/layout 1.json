@@ -3683,9 +3683,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 48,
+						"x": 288,
 						"y": 24,
-						"width": 288,
+						"width": 168,
 						"height": 48,
 						"originX": 0,
 						"originY": 0,
@@ -7744,6 +7744,48 @@
 						"height": 120,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "text_time",
+					"properties": {
+						"text": "Time : 0",
+						"enable-bbcode": false,
+						"font": "Arial",
+						"size": 24,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 145,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 24,
+						"y": 24,
+						"width": 192,
+						"height": 48,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
