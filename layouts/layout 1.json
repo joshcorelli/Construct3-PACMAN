@@ -4564,35 +4564,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 41,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 24,
-						"y": 504,
-						"width": 48,
-						"height": 48,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "wall",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 42,
 					"instanceVariables": {},
 					"behaviors": {},
@@ -5382,35 +5353,6 @@
 					"world": {
 						"x": 792,
 						"y": 552,
-						"width": 48,
-						"height": 48,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "wall",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 72,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 792,
-						"y": 504,
 						"width": 48,
 						"height": 48,
 						"originX": 0.5,
@@ -7739,6 +7681,64 @@
 					}
 				},
 				{
+					"type": "GhostTransition1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 68,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 456,
+						"width": 24,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GhostTransition2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 269,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 804,
+						"y": 456,
+						"width": 24,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "wall",
 					"properties": {
 						"initially-visible": true,
@@ -7792,12 +7792,12 @@
 							1,
 							1
 						],
-						"angle": 6.281601892521444,
+						"angle": 0,
 						"zElevation": 0
 					}
 				},
 				{
-					"type": "GhostTransition1",
+					"type": "wall",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -7805,14 +7805,43 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 68,
+					"uid": 72,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 12,
-						"y": 456,
-						"width": 24,
+						"x": 792,
+						"y": 504,
+						"width": 48,
 						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Transition1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Transition",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 270,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 24,
+						"y": 396,
+						"width": 48,
+						"height": 24,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -7826,7 +7855,7 @@
 					}
 				},
 				{
-					"type": "GhostTransition2",
+					"type": "Transition2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -7834,14 +7863,101 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 269,
+					"uid": 272,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 804,
-						"y": 456,
-						"width": 24,
+						"x": 792,
+						"y": 396,
+						"width": 48,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Transition2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 273,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 792,
+						"y": 516,
+						"width": 48,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "wall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 24,
+						"y": 504,
+						"width": 48,
 						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Transition1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Transition",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 271,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 24,
+						"y": 516,
+						"width": 48,
+						"height": 24,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
