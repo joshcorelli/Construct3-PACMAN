@@ -97,7 +97,11 @@
 			"txtScore",
 			"txtGUI",
 			"playerLives",
-			"text_time"
+			"text_time",
+			"Transition1",
+			"Transition2",
+			"GhostTransition1",
+			"GhostTransition2"
 		],
 		"subfolders": []
 	},

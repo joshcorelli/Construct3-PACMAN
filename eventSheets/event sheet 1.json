@@ -292,6 +292,60 @@
 						}
 					],
 					"sid": 249698120671951
+				},
+				{
+					"eventType": "comment",
+					"text": "Player transitions to the opposite side of the map"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 703057877422456,
+							"parameters": {
+								"object": "Transition1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Player",
+							"sid": 652856540393595,
+							"parameters": {
+								"x": "792",
+								"y": "456"
+							}
+						}
+					],
+					"sid": 294712196715229
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 335524781853472,
+							"parameters": {
+								"object": "Transition2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Player",
+							"sid": 683703071806403,
+							"parameters": {
+								"x": "24",
+								"y": "456"
+							}
+						}
+					],
+					"sid": 997441275559736
 				}
 			]
 		},
@@ -1300,6 +1354,56 @@
 						}
 					],
 					"sid": 841220779157837
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Ghost",
+							"sid": 876688637355130,
+							"parameters": {
+								"object": "GhostTransition1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Ghost",
+							"sid": 415305686446134,
+							"parameters": {
+								"x": "780",
+								"y": "456"
+							}
+						}
+					],
+					"sid": 995970783825899
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Ghost",
+							"sid": 841751189413784,
+							"parameters": {
+								"object": "GhostTransition2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Ghost",
+							"sid": 174866146557187,
+							"parameters": {
+								"x": "24",
+								"y": "456"
+							}
+						}
+					],
+					"sid": 635882087444724
 				}
 			]
 		},
@@ -1985,6 +2089,15 @@
 					"parameters": {
 						"text": "\"Congratulations\""
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 309393688529611,
+					"parameters": {
+						"variable": "timer",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 245863928163473
@@ -2049,9 +2162,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "text_time",
-					"sid": 286897469346330,
+					"sid": 631556547336286,
 					"parameters": {
-						"text": "timer"
+						"text": "\"Time: \" & timer"
 					}
 				}
 			],
