@@ -311,9 +311,17 @@
 					],
 					"actions": [
 						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Player",
+							"sid": 317312165891914,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "Player",
-							"sid": 652856540393595,
+							"sid": 547805316515591,
 							"parameters": {
 								"x": "792",
 								"y": "456"
@@ -336,9 +344,17 @@
 					],
 					"actions": [
 						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Player",
+							"sid": 195083654288027,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "Player",
-							"sid": 683703071806403,
+							"sid": 411602700740877,
 							"parameters": {
 								"x": "24",
 								"y": "456"
@@ -2045,9 +2061,9 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 278090956297028,
+					"sid": 884205945785054,
 					"parameters": {
-						"first-value": "BigDot.Count",
+						"first-value": "BigDot.count",
 						"comparison": 0,
 						"second-value": "0"
 					}
@@ -2055,9 +2071,9 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 929366850432635,
+					"sid": 105407440226433,
 					"parameters": {
-						"first-value": "Dot.Count",
+						"first-value": "Dot.count",
 						"comparison": 0,
 						"second-value": "0"
 					}
@@ -2068,39 +2084,175 @@
 					"sid": 419977219772112
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 245863928163473,
+			"children": [
 				{
-					"id": "destroy",
-					"objectClass": "Ghost",
-					"sid": 959725313309462
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Game",
+							"sid": 541203842448410,
+							"parameters": {
+								"instance-variable": "gotolayout",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 966420922972403,
+							"parameters": {
+								"layout": "Layout 2"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 558328637277906
+						}
+					],
+					"sid": 747132016306210
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "txtGUI",
-					"sid": 705071008999751,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Game",
+							"sid": 789782688654683,
+							"parameters": {
+								"instance-variable": "gotolayout",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 888174272467384,
+							"parameters": {
+								"layout": "Layout 3"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 458387249354260
+						}
+					],
+					"sid": 374624951216660
 				},
 				{
-					"id": "set-text",
-					"objectClass": "txtGUI",
-					"sid": 936616273303586,
-					"parameters": {
-						"text": "\"Congratulations\""
-					}
-				},
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Game",
+							"sid": 471896684116695,
+							"parameters": {
+								"instance-variable": "gotolayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Ghost",
+							"sid": 617229536366851
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Player",
+							"sid": 448920944499113
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 456184342942244,
+							"parameters": {
+								"variable": "timer",
+								"value": "-1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "txtGUI",
+							"sid": 820201300364270,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "text_time",
+							"sid": 513107673244364,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "time_end",
+							"sid": 696822615574170,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "txtGUI",
+							"sid": 507386295002471,
+							"parameters": {
+								"text": "\"Congratulations\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Continue",
+							"sid": 990277260411348,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 886149116242826
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 309393688529611,
-					"parameters": {
-						"variable": "timer",
-						"value": "0"
-					}
+					"id": "on-clicked",
+					"objectClass": "Continue",
+					"sid": 770872077187356
 				}
 			],
-			"sid": 245863928163473
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 951296645851544,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 850904700928775
+				}
+			],
+			"sid": 990669686467568
 		},
 		{
 			"eventType": "comment",
@@ -2128,6 +2280,22 @@
 				},
 				{
 					"id": "set-visible",
+					"objectClass": "text_time",
+					"sid": 478570243014691,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "time_end",
+					"sid": 753752066523759,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "txtGUI",
 					"sid": 178518591015214,
 					"parameters": {
@@ -2141,9 +2309,37 @@
 					"parameters": {
 						"text": "\"Game Over\""
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RestartLevel",
+					"sid": 413241865611518,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
-			"sid": 597825143285581
+			"sid": 597825143285581,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "RestartLevel",
+							"sid": 947899277909324
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 220973965719130
+						}
+					],
+					"sid": 466917029012590
+				}
+			]
 		},
 		{
 			"eventType": "comment",
@@ -2162,9 +2358,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "text_time",
-					"sid": 631556547336286,
+					"sid": 266452061512240,
 					"parameters": {
-						"text": "\"Time: \" & timer"
+						"text": "\"Time : \" & timer"
 					}
 				}
 			],
@@ -2213,15 +2409,6 @@
 				{
 					"callFunction": "playerDeath",
 					"sid": 549090065624683
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 873136359621032,
-					"parameters": {
-						"variable": "timer",
-						"value": "120"
-					}
 				}
 			],
 			"sid": 565360041910491
@@ -2243,6 +2430,22 @@
 				},
 				{
 					"id": "set-visible",
+					"objectClass": "text_time",
+					"sid": 641397852725174,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "time_end",
+					"sid": 291650846070720,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "txtGUI",
 					"sid": 998948858926978,
 					"parameters": {
@@ -2256,9 +2459,40 @@
 					"parameters": {
 						"text": "\"Game Over\""
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RestartLevel",
+					"sid": 449650730475416,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 707384373582284
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "RestartLevel",
+					"sid": 239538792732183
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 417265172922620
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 323205242265611
+				}
+			],
+			"sid": 106837995581015
 		}
 	],
 	"sid": 500463198133144

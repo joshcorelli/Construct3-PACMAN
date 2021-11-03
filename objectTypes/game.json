@@ -63,6 +63,12 @@
 			"type": "boolean",
 			"desc": "Is the player alive, helps preventing two lives if two overlapping ghosts collide with the player",
 			"sid": 183998038387148
+		},
+		{
+			"name": "gotolayout",
+			"type": "number",
+			"desc": "",
+			"sid": 500854408749213
 		}
 	],
 	"behaviorTypes": [],
