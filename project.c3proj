@@ -55,6 +55,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
@@ -114,7 +122,8 @@
 			"level",
 			"RestartLevel",
 			"time_end",
-			"Continue"
+			"Continue",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -144,7 +153,13 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Pacman_Wondering.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 981768684939813
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

@@ -3,6 +3,26 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "GameScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 769262701569520
+		},
+		{
+			"eventType": "variable",
+			"name": "Music",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 386641774008726
+		},
+		{
+			"eventType": "variable",
 			"name": "timer",
 			"type": "number",
 			"initialValue": "120",
@@ -1558,7 +1578,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Game",
-					"sid": 320009892835600,
+					"sid": 640464285041353,
 					"parameters": {
 						"instance-variable": "nbGhost",
 						"value": "0"
@@ -1669,20 +1689,20 @@
 					}
 				},
 				{
-					"id": "add-to-instvar",
-					"objectClass": "Game",
-					"sid": 723341749228131,
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 298709392513595,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "GameScore",
 						"value": "Game.bigDotScore"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "Text",
-					"sid": 939555991842020,
+					"sid": 477860842916146,
 					"parameters": {
-						"text": "\"Score : \" & Game.Score"
+						"text": "\"Score : \" & GameScore"
 					}
 				}
 			],
@@ -1711,20 +1731,20 @@
 					"sid": 596050255497900
 				},
 				{
-					"id": "add-to-instvar",
-					"objectClass": "Game",
-					"sid": 261377558600402,
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 830030201236984,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "GameScore",
 						"value": "Game.dotScore"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "Text",
-					"sid": 231168922315435,
+					"sid": 149799220669377,
 					"parameters": {
-						"text": "\"Score : \" & Game.Score"
+						"text": "\"Score : \" & GameScore"
 					}
 				}
 			],
@@ -1857,20 +1877,20 @@
 							}
 						},
 						{
-							"id": "add-to-instvar",
-							"objectClass": "Game",
-							"sid": 404364924113103,
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 741507094854886,
 							"parameters": {
-								"instance-variable": "Score",
+								"variable": "GameScore",
 								"value": "100 * Game.nbGhost"
 							}
 						},
 						{
 							"id": "set-text",
 							"objectClass": "Text",
-							"sid": 643474049993002,
+							"sid": 333576097272549,
 							"parameters": {
-								"text": "\"Score : \" & Game.Score"
+								"text": "\"Score : \" & GameScore"
 							}
 						}
 					],
@@ -2061,9 +2081,9 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 884205945785054,
+					"sid": 629136235210607,
 					"parameters": {
-						"first-value": "BigDot.count",
+						"first-value": "BigDot.Count",
 						"comparison": 0,
 						"second-value": "0"
 					}
@@ -2071,9 +2091,9 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 105407440226433,
+					"sid": 988995014825487,
 					"parameters": {
-						"first-value": "Dot.count",
+						"first-value": "Dot.Count",
 						"comparison": 0,
 						"second-value": "0"
 					}
@@ -2111,9 +2131,21 @@
 							}
 						},
 						{
-							"id": "reset-global-variables",
+							"id": "set-text",
+							"objectClass": "Text",
+							"sid": 144129578743335,
+							"parameters": {
+								"text": "\"Score : \" & GameScore"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 558328637277906
+							"sid": 978658654060403,
+							"parameters": {
+								"variable": "timer",
+								"value": "120"
+							}
 						}
 					],
 					"sid": 747132016306210
@@ -2142,9 +2174,21 @@
 							}
 						},
 						{
-							"id": "reset-global-variables",
+							"id": "set-text",
+							"objectClass": "Text",
+							"sid": 459532138346853,
+							"parameters": {
+								"text": "\"Score : \" & GameScore"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 458387249354260
+							"sid": 822566623465545,
+							"parameters": {
+								"variable": "timer",
+								"value": "120"
+							}
 						}
 					],
 					"sid": 374624951216660
@@ -2250,6 +2294,15 @@
 					"id": "reset-global-variables",
 					"objectClass": "System",
 					"sid": 850904700928775
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 988135821829279,
+					"parameters": {
+						"variable": "Music",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 990669686467568
@@ -2332,9 +2385,12 @@
 					],
 					"actions": [
 						{
-							"id": "restart-layout",
+							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 220973965719130
+							"sid": 537933825420841,
+							"parameters": {
+								"layout": "Layout 1"
+							}
 						}
 					],
 					"sid": 466917029012590
@@ -2489,10 +2545,64 @@
 				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
-					"sid": 323205242265611
+					"sid": 157552984928249
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 293883194935843,
+					"parameters": {
+						"variable": "Music",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 106837995581015
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 893345812309405
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Game",
+					"sid": 488954273631129,
+					"parameters": {
+						"instance-variable": "gotolayout",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 905952825308196,
+					"parameters": {
+						"first-value": "Music",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 291712224970879,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"Pacman_Wondering\"",
+						"loop": "looping",
+						"volume": "-15",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 396703092820755
 		}
 	],
 	"sid": 500463198133144

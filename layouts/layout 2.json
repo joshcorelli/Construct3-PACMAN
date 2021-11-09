@@ -3539,9 +3539,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 288,
+						"x": 216,
 						"y": 24,
-						"width": 168,
+						"width": 288,
 						"height": 48,
 						"originX": 0,
 						"originY": 0,
@@ -3669,7 +3669,7 @@
 						"x": 576,
 						"y": 48,
 						"width": 82,
-						"height": 82,
+						"height": 77,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3700,7 +3700,7 @@
 						"x": 672,
 						"y": 48,
 						"width": 82,
-						"height": 82,
+						"height": 77,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3731,7 +3731,7 @@
 						"x": 768,
 						"y": 48,
 						"width": 82,
-						"height": 82,
+						"height": 77,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -7298,7 +7298,7 @@
 							1,
 							1,
 							1,
-							0.3
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -7327,7 +7327,7 @@
 							1,
 							1,
 							1,
-							0.3
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -7443,7 +7443,7 @@
 							1,
 							1,
 							1,
-							0.3
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -7472,7 +7472,7 @@
 							1,
 							1,
 							1,
-							0.3
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -7530,7 +7530,7 @@
 							1,
 							1,
 							1,
-							0.3
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -7559,7 +7559,7 @@
 							1,
 							1,
 							1,
-							0.3
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
